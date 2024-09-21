@@ -1,0 +1,22 @@
+
+=== Mon Sep 16 11:55:47 2024
+
+Packages were changed.
+Update Mode: mergeDefaultDependencies
+
+The following packages were added:
+  com.unity.modules.androidjni@1.0.0
+  com.unity.modules.cloth@1.0.0
+  com.unity.modules.director@1.0.0
+  com.unity.modules.terrainphysics@1.0.0
+  com.unity.modules.tilemap@1.0.0
+  com.unity.modules.uielements@1.0.0
+  com.unity.modules.umbra@1.0.0
+  com.unity.modules.unityanalytics@1.0.0
+  com.unity.modules.vehicles@1.0.0
+  com.unity.modules.video@1.0.0
+  com.unity.modules.wind@1.0.0
+The following packages were updated:
+  com.unity.collab-proxy from version 2.2.0 to 2.4.4
+  com.unity.probuilder from version 5.2.2 to 5.2.3
+  com.unity.render-pipelines.universal from version 14.0.10 to 14.0.11
