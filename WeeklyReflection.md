@@ -1,6 +1,29 @@
 
 # Weekly Reflection
 
+## Week 2
+Learnt that the vectors of an objects could be presented as a matrix , and how collision detection is conducted(Separating axis theorem and GJK algorithm) 
+and its issues (i.e: tunneling). 
+
+**Ran the FPS prefab and learnt various things :**
+> Saving created components as presets for ease of usage
+
+> Level creation could be easily created via a combination of pre-created area and a script to allow for easy chaining of levels
+
+> Scene could be used as a different levels within the same game (i.e: level 1 , 2 etc)
+
+> How to enable and use gizmo
+
+> Various scripts used in the prefab could be used in the final project (mainly the endstage script , projectile collider and controller ( mainly for weapon
+> selection and firing ) and how to conduct animations within unity.
+
+Continued self-laerning and figured out sky-boxes , creation and application of materials , triggers , teleporting players and detection of mouseclicks.
+Also learnt how unity render in objects via render queue and its effects.
+
+However, i experienced some issues when attempting to upload my project into github via gitbash :
+> Forget to change branch before pushing , when attempting to undo commit and push i accidentally removed all project files (except my self-learning files
+> as its in another directory). Had to get LFS (large file system) to retrack all files before i can continue.
+
 ## Week 1
 
 Installed unity engine onto my laptop and followed through with the weekly practical lessons, completing the nessasary tasks. Apart from that , 
@@ -25,4 +48,3 @@ that could be used to upload large files like Library and Assets and referenced 
 
 > Had various issues occured however (i.e : forbidden files (.gitattribute referencing another .gitattribute), unclear and vague documentation for LFS) but at the end of the day , i manageed to successfully upload
 to git hub.
-
