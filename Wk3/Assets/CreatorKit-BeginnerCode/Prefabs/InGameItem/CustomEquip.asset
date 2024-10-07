@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-1433277344710265384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4e7960e3eca5134b8861ba3e315df47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Description: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 640b52b005f736744b3aabdfb8f24abb, type: 3}
+  m_Name: CustomEquip
+  m_EditorClassIdentifier: 
+  ItemName: 
+  ItemSprite: {fileID: 0}
+  Description: 
+  WorldObjectPrefab: {fileID: 0}
+  Slot: 0
+  MinimumStrength: 0
+  MinimumAgility: 10
+  MinimumDefense: 0
+  EquippedEffects:
+  - {fileID: -1433277344710265384}
