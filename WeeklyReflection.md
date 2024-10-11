@@ -1,6 +1,45 @@
 
 # Weekly Reflection
 
+## Week 3
+Learnt how to attach various effects onto in-game items : items , equips and drops, how to create a class and spawn in items onto the ingame world. Various functions
+like inheritance, tags which is new to me , allows us to share codes within similar family.
+
+**Ran the C# for beginner**
+> Created a item spawner that spews out items onto the ingame world that uses a while loop to ensure that each items are of equidistance.
+
+> Objects could have a tag that allows the engine to recognise what group it is part of. Allows us to declare multiple common code snippets that is shared
+> amoungst multiple classes / objects.
+
+> Noticed that there are multiple ways of codeing despite having the same outcome.
+
+> Learnt about inheritance
+
+**Self-Learning**
+
+Noticed that my player character will experience a reproduceable bug that continously increases gravity acceleration if certain actions is conducted :
+
+- Character repeatly falls off the platform without any jump input.
+- Acceleration is repeately compounded , causing the player model down-ward moment to increase exponentially.
+
+After scanning through the codes , realised that this was caused by the  `PlayerMovement.cs` which only resets `Acceleration = Gravity * Time.deltaTime` 
+after a `jump`. This is remedied by introducing a flag that checks when a player is grounded via `characterController.isGrounded` and resetting the `ymovement`
+direction. A cap to the `Acceleration` is also introduced to cap speed if the fall is too high up.
+
+Created a trigger `capsule` that will be used to detect for an enemies's hitbox which scales accordingly to the duration that the left mouse button `Input.GetMouseButton(0)` 
+is held down. The duration held down is calculated using `if (Time.deltaTime % 1 == 0)` which increments the `ChargeLvl` every seconds , capping at 5 secs.
+
+**To-Do**
+- Learn how to transform player's position to the enemies in the attack range, represented by the trigger capsule . The code `PlayerEntity.transform.position =
+  teleportDestination.position` used by the out-of-bound trigger could be used, however i am unable to detect who is being hit. (i.e: multiple enemies , who to
+  teleport to).
+- Tried using `Nav Mesh Agent` for enemies movement, need to learn more about it.
+
+**Issues**
+Got a bit better at using GitBash, but as the new prefab has a large file`100mb` i had to use lfs .Tried calling the file name directly via `git lfs track [name]` but
+it was unable to find the file. Thus i have to use`git lfs track --filename [name]` ,but the prefab name contains space it was unable to track the file. So in order
+to upload to git, i had to rename and remove the spaces contained within the filename, only then i was able to track the files , commit and push to github.
+
 ## Week 2
 Learnt that the vectors of an objects could be presented as a matrix , and how collision detection is conducted(Separating axis theorem and GJK algorithm) 
 and its issues (i.e: tunneling). 
