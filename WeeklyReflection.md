@@ -1,6 +1,29 @@
 
 # Weekly Reflection
 
+## Week 4
+Learnt about fuzzy logic in lecture, which allows the ingame entities to have human-like behavior. Despite the term fuzzy logic being new to me, i had experienced its
+effects in games like alient isolation , which uses neural network , fuzzy logic for its enemies behavior which gives the impression as though the enemy adapts to the players
+action, increasing the player's immersion. Whilst not to that extent, i am interested in learning about the ins and out of fuzzy logic as i personally believe that
+enemies with ambigious resoning will improve immersion overall and players would not be able to easily guess the programming behind it.
+
+**Practical**
+> Learnt that adding vectors to an component does not nessasarily cause it to move to the intended location, this is caused as the vector being added to the component is relative to
+> world axis and not the actual distance between the 2 objects.
+
+> Dividing the vector into smaller "steps" allows for simulation of motion instead of instantly teleporting to the target.
+
+> The usage of Time.deltaTime with normalization allows two components to travel at the exact same speed despite the difference in distance. Time.deltaTime is also useful in tracking
+> the length of time since the last execution
+
+> Unity has a built-in method to acquire vectors between objects , which can be used to pathfind to target.
+
+> A projectile can be rotated mid-flight to simulate dropoff
+
+**Self-Learning**
+Did not spend much time this week on developing the personal project. However i did manage to find a material library `Poligon` that could be used in the final project. 
+Its a material library for blender but it is also compatiable with unity. 
+
 ## Week 3
 Learnt how to attach various effects onto in-game items : items , equips and drops, how to create a class and spawn in items onto the ingame world. Various functions
 like inheritance, tags which is new to me , allows us to share codes within similar family.
